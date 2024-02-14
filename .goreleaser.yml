@@ -13,9 +13,14 @@ builds:
     flags:
       - -trimpath
 
+release:
+  prerelease: auto
 
 archives:
   - format: tar.gz
     format_overrides:
       - goos: windows
         format: zip
+
+changelog:
+  use: github-native
